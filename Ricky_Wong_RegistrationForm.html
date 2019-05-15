@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Registration Form</title>
+        <meta name="description" content="Sample registration form">
+        <meta charset ="UTF-8">
+    </head>
+    <body>
+        <form action="process.php" method="post">
+            
+            <h1><u>My Registration Form</u></h1>
+            
+            <!-- Create table: general information -->
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" name="first_name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" name="last_name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email">
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <label for="password">Password:</label>
+                                <input type="text" id="password" name="password">
+                            </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <label for="pwconfirm">PW Confirm:</label>
+                                <input type="text" id="pwconfirm" name="pwconfirm">
+                            </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <label for="birthday">Birthday:</label>
+                                <input type="text" id="birthday" name="birthday" value="mm/dd/yyyy">
+                                <img src="https://image.flaticon.com/icons/svg/34/34389.svg" alt="mini calender" height="25" width="25">
+                            </td>
+                    </tr>
+                </tbody>        
+            </table>
+            
+            <!-- Gender Selection -->
+            <p>Select your gender:</p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+        
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            
+            <label for="decline">Other</label>
+            <input type="radio" id="decline" name="gender" value="decline">
+        
+            <p>A short description about yourself</p>
+            <textarea name="description" rows="10" cols="30"></textarea>
+            <br><br>
+
+            Favorite Language
+            <select name="language"> <!-- Drop down menu -->
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Python">Python</option>
+            </select>
+
+            <input type="submit" value="SUBMIT">
+        </form>
+    </body>
+</html>
